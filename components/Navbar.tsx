@@ -39,7 +39,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">Hosna Qasmei</h2>
+                <h2 className="text-2xl font-bold cursor-pointer hover:text-teal-600">Daniel González</h2>
               </div>
             </Link>
             <div className="md:hidden">
@@ -55,9 +55,8 @@ export default function Navbar() {
 
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+              }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
@@ -66,7 +65,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                      "block cursor-pointer lg:inline-block text-neutral-900  hover:text-teal-600 dark:text-neutral-100 hover:dark:text-teal-600"
                     }
                     activeClass="active"
                     spy={true}
@@ -82,14 +81,14 @@ export default function Navbar() {
               {currentTheme === "dark" ? (
                 <button
                   onClick={() => setTheme("light")}
-                  className="bg-slate-100 p-2 rounded-xl"
+                  className="bg-slate-100 p-2 rounded-xl hover:bg-slate-300"
                 >
                   <RiSunLine size={25} color="black" />
                 </button>
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
-                  className="bg-slate-100 p-2 rounded-xl"
+                  className="bg-slate-100 p-2 rounded-xl hover:bg-slate-300"
                 >
                   <RiMoonFill size={25} />
                 </button>

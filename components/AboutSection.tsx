@@ -4,15 +4,19 @@ import Image from "next/image"
 const skills = [
   { skill: "HTML" },
   { skill: "CSS" },
+  { skill: "Sass" },
   { skill: "JavaScript" },
   { skill: "TypeScript" },
-  { skill: "Python" },
+  { skill: "Express.js" },
   { skill: "React" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
   { skill: "Git" },
   { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
+  { skill: "Node.js" },
+  { skill: "SQL" },
+  { skill: "NoSQL" },
+  { skill: "PHP" },
 ]
 
 const AboutSection = () => {
@@ -30,24 +34,24 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Hosna and I am a{" "}
+              Hi, my name is Daniel and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in Los Angeles, CA.
+              <span className="font-bold">{" driven"}</span> web developer
+              from Málaga, spain.
             </p>
             <br />
             <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
+            I am studying my last year of higher degree in computer
+            science. I love everything related to Frontend and 
+            Backend, and in the future I would like to work on Fullstack.
             </p>
             <br />
             <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+            I have a wide range of hobbies and passions that keep me 
+            busy. From reading, playing sports, traveling to doing new 
+            programming projects, I am always looking for new 
+            experiences and love to stay involved and learn new things.
             </p>
             <br />
             <p>
@@ -57,8 +61,17 @@ const AboutSection = () => {
               </span>{" "}
               and that&#39;s what I strive to do, I have a passion for
               technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
+              possible. I am excited to see where my career takes me and
               always open to new opportunities. 🙂
+            </p>
+            <br />
+            <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
+              Contact me!
+            </h1>
+            <p>
+            <span className="font-bold text-teal-500">
+              ✉️ danielgonzalez.infoo@gmail.com
+              </span>{" "}
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
@@ -76,7 +89,7 @@ const AboutSection = () => {
               })}
             </div>
             <Image
-              src="/hero-image.png"
+              src="/pc.webp"
               alt=""
               width={325}
               height={325}
