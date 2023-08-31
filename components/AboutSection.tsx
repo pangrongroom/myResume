@@ -71,6 +71,8 @@ const AboutSection = () => {
             <p>
             <span className="font-bold text-teal-500">
               ✉️ danielgonzalez.infoo@gmail.com
+              <br />
+              📱 +34 656 61 18 15
               </span>{" "}
             </p>
           </div>

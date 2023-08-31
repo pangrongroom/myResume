@@ -81,14 +81,14 @@ export default function Navbar() {
               {currentTheme === "dark" ? (
                 <button
                   onClick={() => setTheme("light")}
-                  className="bg-slate-100 p-2 rounded-xl hover:bg-slate-300"
+                  className="bg-slate-300 p-2 rounded-xl hover:bg-slate-500"
                 >
                   <RiSunLine size={25} color="black" />
                 </button>
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
-                  className="bg-slate-100 p-2 rounded-xl hover:bg-slate-300"
+                  className="bg-slate-300 p-2 rounded-xl hover:bg-slate-500"
                 >
                   <RiMoonFill size={25} />
                 </button>
