@@ -13,7 +13,14 @@ const projects = [
     github: "https://github.com/fovehack/ai-companion",
     link: "https://ai-companion-ashy.vercel.app/",
   },
-  
+  {
+    name: " Discord Clone",
+    description:
+      "Create your own server and invite your friends. Chat, voice and video calls in real-time😱. Next.js 13, React, Typescript, Prisma, Clerk, PostgreSQL, Node.js",
+    image: "/purple.jpg",
+    github: "https://github.com/fovehack/discord-clone",
+    link: "https://discord-clone-production-227b.up.railway.app/",
+  },
 ]
 
 const ProjectsSection = () => {

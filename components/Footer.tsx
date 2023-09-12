@@ -1,13 +1,7 @@
 import React from "react"
 import {
   AiOutlineGithub,
-  AiOutlineTwitter,
-  AiOutlineLinkedin,
-  AiOutlineYoutube,
-  AiOutlineContacts,
-  AiOutlineCodeSandbox,
-  AiOutlineInfo,
-  AiOutlineMessage,
+  AiOutlineLinkedin
 } from "react-icons/ai"
 
 const Footer = () => {

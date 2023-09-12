@@ -1,4 +1,4 @@
-"use client" // this is a client component
+"use client"
 import React from "react"
 import { useState } from "react"
 import { Link } from "react-scroll/modules"
@@ -65,7 +65,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "block cursor-pointer lg:inline-block text-neutral-900  hover:text-teal-600 dark:text-neutral-100 hover:dark:text-teal-600"
+                      "block cursor-pointer lg:inline-block font-semibold text-neutral-900  hover:text-teal-600 dark:text-neutral-100 hover:dark:text-teal-600"
                     }
                     activeClass="active"
                     spy={true}

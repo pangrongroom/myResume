@@ -81,12 +81,12 @@ const AboutSection = () => {
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
-                  <p
+                  <button
                     key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                    className="bg-gray-200 mr-2 mt-2 text-gray-500  font-semibold flex items-center text-center text-xs md:text-sm px-2 md:px-4 py-2 md:py-3 rounded-md hover:bg-teal-500 hover:text-gray-200 transition cursor-pointer"
                   >
                     {item.skill}
-                  </p>
+                  </button>
                 )
               })}
             </div>
