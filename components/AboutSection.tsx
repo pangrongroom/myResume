@@ -8,6 +8,7 @@ const skills = [
   { skill: "JavaScript" },
   { skill: "TypeScript" },
   { skill: "Express.js" },
+  { skill: "Vue" },
   { skill: "React" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
@@ -34,16 +35,15 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Daniel and I am a{" "}
+              Hi, my name is Chito and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
               <span className="font-bold">{" driven"}</span> web developer
-              from Málaga, spain.
+              from AnHui, China.
             </p>
             <br />
             <p>
-            I am studying my last year of higher degree in computer
-            science. I love everything related to Frontend and 
+            I have been engaged in front-end development for about five years. I love everything related to Frontend and 
             Backend, and in the future I would like to work on Fullstack.
             </p>
             <br />
@@ -70,9 +70,9 @@ const AboutSection = () => {
             </h1>
             <p>
             <span className="font-bold text-teal-500">
-              ✉️ danielgonzalez.infoo@gmail.com
+              ✉️ wangchito72@gmail.com
               <br />
-              📱 +34 656 61 18 15
+              📱 +86 13083188036
               </span>{" "}
             </p>
           </div>

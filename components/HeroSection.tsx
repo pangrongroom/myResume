@@ -7,10 +7,10 @@ import { HiArrowDown } from "react-icons/hi"
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
+      <div className="flex flex-col items-center justify-center py-16 my-10 text-center animate-fadeIn animation-delay-2 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2">
           <Image
-            src="/headshot1.png"
+            src="/headshot3.jpg"
             alt=""
             width={325}
             height={325}
@@ -18,18 +18,18 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m Daniel!</h1>
-          <p className="text-lg mt-4 mb-6 md:text-2xl">
+          <h1 className="mt-6 text-4xl font-bold md:mt-0 md:text-7xl">Hi, I&#39;m chito!</h1>
+          <p className="mt-4 mb-6 text-lg md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-teal-600">
               Web Developer{" "}
             </span>
-            from Malaga, Spain. I love doing different projects and learning every day. Working with new technologies like React, Next.js,
+            from AnHui, China. I love doing different projects and learning every day. Working with new technologies like Vue, React, Next.js,
             Express.js, Typescript, Node.js
           </p>
           <Link
             to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 cursor-pointer"
+            className="px-6 py-3 font-semibold bg-teal-600 rounded shadow cursor-pointer text-neutral-100 hover:bg-teal-700"
             activeClass="active"
             spy={true}
             smooth={true}
@@ -40,7 +40,7 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-row items-center text-center justify-center">
+      <div className="flex flex-row items-center justify-center text-center">
         <Link
           to="about"
           activeClass="active"
@@ -49,7 +49,7 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          <HiArrowDown size={35} className="animate-bounce cursor-pointer hover:text-teal-600" />
+          <HiArrowDown size={35} className="cursor-pointer animate-bounce hover:text-teal-600" />
         </Link>
       </div>
     </section>

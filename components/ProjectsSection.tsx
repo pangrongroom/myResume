@@ -1,32 +1,32 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import SlideUp from './SlideUp'
+import { BsGithub, BsArrowUpRightSquare } from 'react-icons/bs'
 
 const projects = [
   {
-    name: " SaaS AI Companion",
+    name: ' SaaS AI Companion',
     description:
-      "Create your own AI and talk to him. Technologies: Next.js 13, Pinecone, Uptash Redis, MySQL, Prisma, Stripe, Clerk, React, Tailwind, Typescript, Node.js",
-    image: "/2.jpg",
-    github: "https://github.com/fovehack/ai-companion",
-    link: "https://ai-companion-ashy.vercel.app/",
+      'Create your own AI and talk to him. Technologies: Next.js 13, Pinecone, Uptash Redis, MySQL, Prisma, Stripe, Clerk, React, Tailwind, Typescript, Node.js',
+    image: '/2.jpg',
+    github: 'https://github.com/fovehack/ai-companion',
+    link: 'https://ai-companion-ashy.vercel.app/',
   },
   {
-    name: " Discord Clone",
+    name: ' Discord Clone',
     description:
-      "Create your own server and invite your friends. Chat, voice and video calls in real-time😱. Next.js 13, React, Typescript, Prisma, Clerk, PostgreSQL, Node.js",
-    image: "/purple.jpg",
-    github: "https://github.com/fovehack/discord-clone",
-    link: "https://discord-clone-production-227b.up.railway.app/",
+      'Create your own server and invite your friends. Chat, voice and video calls in real-time😱. Next.js 13, React, Typescript, Prisma, Clerk, PostgreSQL, Node.js',
+    image: '/purple.jpg',
+    github: 'https://github.com/fovehack/discord-clone',
+    link: 'https://discord-clone-production-227b.up.railway.app/',
   },
 ]
 
 const ProjectsSection = () => {
   return (
     <section id="projects">
-      <h1 className="my-10 text-center font-bold text-4xl">
+      <h1 className="my-10 text-4xl font-bold text-center">
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
@@ -36,7 +36,7 @@ const ProjectsSection = () => {
           return (
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
                     <Link href={project.link} target="_blank">
                       <Image
@@ -44,26 +44,26 @@ const ProjectsSection = () => {
                         alt=""
                         width={1000}
                         height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70"
+                        className="shadow-xl rounded-xl hover:opacity-70"
                       />
                     </Link>
                   </div>
                   <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                    <h1 className="mb-6 text-4xl font-bold">{project.name}</h1>
+                    <p className="mb-4 text-xl leading-7 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
-                    <div className="flex flex-row align-bottom space-x-4">
+                    <div className="flex flex-row space-x-4 align-bottom">
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          className="transition-transform cursor-pointer hover:-translate-y-1"
                         />
                       </Link>
                       <Link href={project.link} target="_blank">
                         <BsArrowUpRightSquare
                           size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          className="transition-transform cursor-pointer hover:-translate-y-1"
                         />
                       </Link>
                     </div>
@@ -73,7 +73,6 @@ const ProjectsSection = () => {
             </div>
           )
         })}
-        
       </div>
     </section>
   )
